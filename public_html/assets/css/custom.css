@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 Aug, 2017, 2:00:48 PM
+    Author     : kiriti
+*/
+
+html, body{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#main, #header{
+    margin: 20px auto;
+}
+
+#main{
+    margin-top: 40px;
+}
+
+#pic{
+    margin-top: 16px;
+    margin-left: 43px;
+    width: 186px;
+    height: 225px;
+}
+
+.letter{
+    display: flex;
+    justify-content: center;
+    height: 230px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.circle{
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 65%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+#searchResult{
+    position: absolute;
+    padding-left: 0;
+    margin-bottom: 20px;
+    z-index: 1;
+    width: 84%;
+}
+
+#searchResult li:hover{
+    background-color: #00BCD4;
+    color: white;
+}

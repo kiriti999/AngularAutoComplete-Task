@@ -1,0 +1,43 @@
+
+<div class="container" id="main" ng-controller="viewDetailsController">
+    <div class="panel">
+        <h4>Details:</h4>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3">
+<img image-test-directive id="pic" ng-show="noImage === false"  ng-src="{{stateData.profilepic}}"  alt=""/>
+
+<div ng-if="noImage">
+    <div id="pic" class="letter">
+        <div class="circle">{{stateData.firstName.charAt(1)+stateData.lastName.charAt(1)}}</div>
+    </div>
+</div>
+    </div>
+    <div class="col-xs-5 col-sm-5 col-md-5">
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label>First Name</label>
+                <span>{{stateData.firstName}}</span>
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <span>{{stateData.lastName}}</span>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <span>{{stateData.email}}</span>
+            </div>
+            <br>
+        </div>
+        
+        <a ui-sref="task1" class="btn btn-primary">Back to Home</a>
+    </div>
+</div>
+
+
+<img image-test-directive ng-show="noImage === false"  ng-src="{{stateData.profilepic}}"  alt=""/>
+
+<div ng-if="noImage">
+    <div >{{stateData.firstName.charAt(1)+stateData.lastName.charAt(1)}}</div>
+</div>
+
